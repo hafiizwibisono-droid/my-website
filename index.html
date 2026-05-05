@@ -1,9 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>Badai Farm - Toko Burung</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1501706362039-c6e08a6d0d65') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .container {
+      padding: 50px;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-body h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #2a5298;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #2a5298;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e3c72;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello Netlify 🚀</h1>
+
+<header>
+  <h1>🐦 Badai Farm</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produk</a>
+    <a href="#">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Jual Burung Berkualitas & Siap Gantang</h2>
+</section>
+
+<div class="container">
+  <h2 class="title">Produk Kami</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1591608511725-6c5a0b8f7f9d">
+      <div class="card-body">
+        <h3>Murai Batu</h3>
+        <p class="price">Rp 2.500.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3">
+      <div class="card-body">
+        <h3>Kacer</h3>
+        <p class="price">Rp 1.200.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1564518098558-1b0f7c1b1a36">
+      <div class="card-body">
+        <h3>Lovebird</h3>
+        <p class="price">Rp 500.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+      <div class="card-body">
+        <h3>Kenari</h3>
+        <p class="price">Rp 800.000</p>
+        <a href="#" class="btn">Beli</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Badai Farm | Toko Burung Terpercaya</p>
+</footer>
+
 </body>
 </html>
